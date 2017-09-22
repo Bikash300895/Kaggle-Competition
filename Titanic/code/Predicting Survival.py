@@ -31,25 +31,5 @@ pylab.rcParams[ 'figure.figsize' ] = 8 , 6
 
 
 
-"""Helpepr functions"""
-def plot_correlation_map(df, cat, target, **kwargs):
-    pass
-
-
-
 # Loading data
-train = pd.read_csv("../input/train.csv")
-test = pd.read_csv("../input/test.csv")
-
-full = train.append(test, ignore_index = True)
-titanic=full[:891]
-del train, test
-
-
-
-"""Statistical symmaries and viasualisations"""
-# Show first few rows of data
-titanic.head()
-
-# show statistical summary
-titanic.describe()
+data = pd.read_csv("../input/train.csv")
